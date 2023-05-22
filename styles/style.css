@@ -29,12 +29,20 @@
 }
 
 * {
-  margin: 0;
+  margin: 0; /*Removes margins and sets line-height */
   line-height: calc(1em + 0.5rem);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.light-mode {
+  --clr-light: #070a13;
+  --clr-dark: #f1f5f9;
+  --clr-slate400: #1e293b;
+  --clr-slate600: #1e293b;
+  --clr-slate800: #1e293b;
 }
 
 body {
@@ -47,12 +55,15 @@ img,
 picture,
 canvas,
 svg {
+  /*Base image properties to restrict overflow */
   display: block;
   max-width: 100%;
   user-select: none;
+  mix-blend-mode: luminosity;
 }
 
 button {
+  /* Removes default styles from the buttons */
   display: inline-block;
   padding: 0;
   border: none;

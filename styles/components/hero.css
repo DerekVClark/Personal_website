@@ -1,4 +1,5 @@
 .hero {
+  /* Centers content */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -9,6 +10,7 @@
 }
 
 .hero__img {
+  /* Resizes and makes images a circle with border radius */
   border-radius: 50%;
   width: 6rem;
   height: 6rem;
@@ -24,12 +26,11 @@
   color: var(--clr-slate400);
   text-transform: uppercase;
   font-size: var(--size-4xl);
-  letter-spacing: -0.05em;
   line-height: 0.9;
 }
 
 .hero__bio {
-  max-width: 60ch;
+  max-width: 60ch; /* ch is the unit for width of the character 0 */
   font-size: var(--size-sm);
   color: var(--clr-slate600);
 }
@@ -88,4 +89,3 @@
     font-size: var(--size-lg);
   }
 }
-

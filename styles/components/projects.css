@@ -1,0 +1,9 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.item2 {
+  border: 2px white dotted;
+  text-align: center;
+}

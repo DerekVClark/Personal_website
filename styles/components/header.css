@@ -1,12 +1,12 @@
 .header {
-  display: flex;
+  display: flex;    /* Added display flex to position the heading content at the end using flexbox and adjusted the content accordingly */
   justify-content: flex-end;
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.header__menu {
+.header__menu {  /* Heading bars and menu only displayed for smaller screens // Display none instead of visibility so they do not need space accomodated for them when not displayed */
   display: none;
 }
 
@@ -17,7 +17,7 @@
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { /* Media queries found in tailwind documentation */
   .header__menu {
     display: flex;
     align-items: center;

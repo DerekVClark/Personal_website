@@ -1,10 +1,10 @@
-.about {    
+.about {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 10rem; /* Gap between the left side and right side or in smaller screen sizes top and bottom */
 }
 
-.about__content {
+.about__content { /*Display and gap for seperation of content on the right side */
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -21,7 +21,7 @@
   color: var(--clr-slate600);
 }
 
-.about__hr {
+.about__hr { /* Horizontal line */
   border-color: var(--clr-slate800);
 }
 
@@ -30,7 +30,7 @@
   color: var(--clr-slate400);
 }
 
-.about__ul-container {
+.about__ul-container { /* Default flex is set to row so the 3 items are displayed next to one another */
   display: flex;
 }
 
@@ -38,9 +38,9 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
-  list-style: "\1F4BB";
+  list-style: "\1F4BB"; /* Unicode for computer emoji */
   padding-left: 1em;
-  flex: 1;
+  flex: 1; /* Give the list items the remaining full space */
 }
 
 .about__list {
@@ -48,9 +48,13 @@
   color: var(--clr-slate600);
 }
 
-.about__list::before {
+.about__list::before { /*Pseudo class to add space before the list items and after the unicode computer bullet points using ::after would add content after the list items */
   content: "";
   margin-left: 0.5em;
+}
+
+.about__img {
+  border-radius: 10px;
 }
 
 @media (min-width: 1024px) {

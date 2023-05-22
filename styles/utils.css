@@ -29,12 +29,13 @@
 */
 
 .btn {
+  /*Base button designs adding a box shadow and transition using pseudo-class hover (Special states) */
   display: inline-block;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: -0.05em;
   background-color: var(--clr-rose);
-  color: var(--clr-light);
+  color: #f1f5f9;
   padding: 0.5em 1em;
   border-radius: 6px;
   box-shadow: 0 10px 20px rgba(255, 29, 72, 0.5),
@@ -43,22 +44,26 @@
 }
 
 .btn:hover {
+  /* Pseudoclass that moves the button up when the mouse hovers and adjusts box shadow */
   transform: translateY(-3px);
   box-shadow: 0 14px 28px rgba(255, 29, 72, 0.25),
     0 10px 10px rgba(255, 29, 72, 0.22), 0 0 120px -10px var(--clr-rose);
 }
 
-.container { /*Basic container properties to center and stretch the containers a certain amount */
+.container {
+  /*Basic container properties to center and stretch the containers a certain amount */
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.5rem; /*Spaces container 0.5 rem away from windows end */
+  padding-left: 0.5rem; /*Spaces contents 0.5 rem away from container*/
   padding-right: 0.5rem;
 }
 
 .section {
-  margin-top: 5rem; /*seperates the section */
+  margin-top: 5rem; /*seperates the sections */
 }
+
+/*Media Queries provided by tailwind documentation to adjust the container according to the users resolution */
 
 /*Extra small screens*/
 @media (min-width: 475px) {

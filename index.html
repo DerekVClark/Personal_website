@@ -27,11 +27,13 @@
             >
           </li>
           <li>
-            <a class="header__link" href="mailto:Derekvc312@gmail.com">Contact</a>
+            <a class="header__link" href="mailto:Derekvc312@gmail.com"
+              >Contact</a
+            >
           </li>
           <li class="header__line"></li>
           <li>
-            <button class="header__sun">
+            <button id="theme-toggle" class="header__sun">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -70,7 +72,11 @@
     </header>
     <main>
       <section class="hero container">
-        <img class="hero__img" src="/profile-pciture.png" alt="Profile picture" />
+        <img
+          class="hero__img"
+          src="/profile-pciture.png"
+          alt="Profile picture"
+        />
         <h2 class="hero__subtitle">Hello, I'm Derek Clark</h2>
         <h1 class="hero__title" data-value="SOFTWARE ENGINEER">
           SOFTWARE ENGINEER
@@ -89,7 +95,7 @@
       </section>
       <section class="about container section">
         <div class="about__content">
-          <h2 class="about__title">About</h2>
+          <h2 class="about__title" id="about">About</h2>
           <p class="about__description">
             Hello and welcome to my page! My name is Derek Clark I am a
             <strong>software engineering student</strong> who began studying
@@ -127,10 +133,14 @@
           </div>
         </div>
         <div class="about__img-wrapper">
-          <img class="about__img" src="/profile-pciture.png" alt="Profile picture" />
+          <img
+            class="about__img"
+            src="/profile-pciture.png"
+            alt="Profile picture"
+          />
         </div>
       </section>
-    <!--
+      <!--
       <section class="featured container section">
         <h3 class="featured__subtitle">Featured Project</h3>
         <div class="featured__wrapper">
@@ -179,6 +189,15 @@
       -->
       <!-- <section></section> -->
       <!-- <section></section> -->
+
+      <section class="projects-grid container section">
+        <div class="item1">
+          <img src="/desktop-preview.jpg" alt="Interactive Rating component" />
+        </div>
+        <div class="item2">
+          <h2 class="project-title">Interactive Rating Component</h2>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script type="module" src="./src/main.js"></script>
