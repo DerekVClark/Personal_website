@@ -18,7 +18,7 @@ const darkMode = () => {
     }
   };
 
-  // Evenets
+  // Events
   themeToggleBtns.forEach((btn) =>
     btn.addEventListener("click", handleThemeToggle)
   );

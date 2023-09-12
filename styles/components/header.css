@@ -4,6 +4,8 @@
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  position: relative;
+  z-index: 9999;
 }
 
 .header__menu {  /* Heading bars and menu only displayed for smaller screens // Display none instead of visibility so they do not need space accomodated for them when not displayed */
