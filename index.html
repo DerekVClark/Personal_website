@@ -155,14 +155,14 @@
             <ul class="about__ul">
               <li class="about__list">HTML</li>
               <li class="about__list">CSS</li>
+              <li class="about__list">ReactJS</li>
               <li class="about__list">Javascript</li>
               <li class="about__list">JQuery</li>
-              <li class="about__list">Bootstrap</li>
             </ul>
             <ul class="about__ul">
-              <li class="about__list">Git</li>
-              <li class="about__list">GitHub</li>
-              <li class="about__list">Microsoft Office</li>
+              <li class="about__list">Git/GitHub</li>
+              <li class="about__list">Restful API</li>
+              <li class="about__list">Supabase</li>
               <li class="about__list">Figma</li>
               <li class="about__list">Tailwind CSS</li>
             </ul>
@@ -181,10 +181,10 @@
       <section class="featured container section" id="featured">
         <h3 class="featured__subtitle">Featured Project</h3>
         <div class="featured__wrapper">
-          <h2 class="featured__title">Portfolio Website</h2>
+          <h2 class="featured__title">SeatGeek API</h2>
           <a
             class="featured__link"
-            href="https://derek-clark-portfolio-website.netlify.app/"
+            href="https://peppy-panda-4c0bfe.netlify.app/"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -200,19 +200,21 @@
         </div>
 
         <p class="featured__description">
-          Developed a personal front end protfolio website to display my
-          relevant projects, biographies, and skills I have acquired. Designed
-          the website using HTML, CSS and Javascript as well as using the
-          documentation found on TailwindCSS
+          Developed a front-end web application that would utilize the publicly
+          available SeatGeek API to fetch event listings in the users vicinity
+          and display relevant event information such as the type, performers
+          and location.
         </p>
         <div class="featured__info-container">
           <div>
             <h3 class="featured__label">Tech stack</h3>
             <ul class="featured__tech-stack">
-              <li class="featured__info">TailwindCSS</li>
+              <li class="featured__info">ReactJS</li>
               <li class="featured__info">HTML</li>
               <li class="featured__info">CSS</li>
-              <li class="featured__info">Javascript</li>
+              <li class="featured__info">
+                Libraries: React, react-router-dom, Axios, recharts
+              </li>
             </ul>
           </div>
           <div>
@@ -221,7 +223,7 @@
           </div>
           <div>
             <h3 class="featured__label">Timeline</h3>
-            <p class="featured__info">December 2023-present</p>
+            <p class="featured__info">October 2023-present</p>
           </div>
         </div>
         <div class="featured__img-container">
@@ -229,24 +231,32 @@
             <img
               class="lazy loading"
               src="https://fakeimg.pl/1902x720"
-              data-src="/first.png"
-              alt="Portfolio website heading"
+              data-src="/Screenshot_26.jpg"
+              alt="Website Homepage/listings page"
             />
           </div>
           <div class="featured__img-wrapper">
             <img
               class="lazy loading"
               src="https://fakeimg.pl/1902x720"
-              data-src="/Screenshot_78.png"
-              alt="Portfolio website about section"
+              data-src="/Screenshot_29.jpg"
+              alt="Website homepage search functionality"
             />
           </div>
           <div class="featured__img-wrapper">
             <img
               class="lazy loading"
               src="https://fakeimg.pl/1902x720"
-              data-src="/Screenshot_79.png"
-              alt="Portfolio website projects section"
+              data-src="/Screenshot_27.jpg"
+              alt="Charts page displaying chart related to different events ratings"
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://fakeimg.pl/1902x720"
+              data-src="/Screenshot_28.jpg"
+              alt="Detail view page for one of the listngs"
             />
           </div>
         </div>
@@ -260,6 +270,7 @@
           The following projects are located in my GitHub
         </p>
         <div class="projects">
+          
           <h2 class="project__title">Interactive Rating Component</h2>
           <div class="project__img-wrapper project__image1">
             <img
@@ -407,6 +418,63 @@
               target="_blank"
               rel="noopener noreferrer"
               href="https://gentle-toffee-5741df.netlify.app/"
+              >Website</a
+            >
+          </div>
+        </div>
+
+        <div class="projects">
+          <h2 class="project__title">Dogs Galore</h2>
+          <div class="project__img-wrapper project__image6">
+            <img
+              class="lazy loading"
+              src="https://fakeimg.pl/1415x953"
+              data-src="/Screenshot_30.jpg"
+              alt="Dogs galore API Website"
+            />
+          </div>
+          <div class="project__text project__content6">
+            <h3 class="project__subtitle">Dogs Galore</h3>
+
+            <p class="project__description1">
+              Developer a web application utilizing the dog api to obtain a random dog breeds information display it on the page and give the user the ability to ban certain attributes and filter out dog breeds that contain those attributes.
+            </p>
+            <p class="project__description2">
+              HTML | CSS | ReactJS | Git | useEffect | useState
+            </p>
+            <a
+              class="btn project__btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://regal-fudge-aaae7a.netlify.app/"
+              >Website</a
+            >
+          </div>
+        </div>
+        <div class="projects">
+          <h2 class="project__title">Among Us Crewmate Creator</h2>
+          <div class="project__img-wrapper project__image7">
+            <img
+              class="lazy loading"
+              src="https://fakeimg.pl/1415x953"
+              data-src="/Screenshot_31.jpg"
+              alt="Among us Crewmate creator website"
+            />
+          </div>
+          <div class="project__text project__content7">
+            <h3 class="project__subtitle">Among Us Crewmate Creator</h3>
+
+            <p class="project__description1">
+             Developed a full stack web application that allowed the user to create, edit, delete and view among us crewmates with their own names and colors.
+            </p>
+            <p class="project__description2">
+              HTML | CSS | ReactJS | Git | useEffect | useState | Supabase
+            </p>
+            <a
+              class="btn project__btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/DerekVClark/Amongus"
               >Website</a
             >
           </div>
